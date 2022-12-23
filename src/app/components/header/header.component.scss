@@ -1,0 +1,130 @@
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 24px;
+}
+
+.header-container nav{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.header-container nav ul{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  border-bottom: black solid 1px;
+  padding: 0;
+  margin-left: 40px;
+}
+
+.header-container nav ul li{
+  padding-right: 20px;
+  font-size: var(--md);
+
+}
+
+.header-container nav ul a{
+  text-decoration: none;
+  color:black;
+}
+
+.header-container nav ul a:hover{
+  color:var(--meditavivir-light-purple);
+}
+
+.nav-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-buttons a{
+  color: var(--white);
+  padding: 8px;
+  border: white solid 1px;
+  border-radius: 16px;
+  background: var(--meditavivir-light-purple);
+  margin: 14px;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+}
+
+// Mobile
+.show-mobile {
+  display: none;
+}
+.show-mobile div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-mobile button{
+  background: transparent;
+  border: none;
+  color:var(--black);
+}
+
+.show-mobile .account{
+  align-self: center;
+}
+.side-menu{
+  width: 100%;
+  box-shadow: 0px 2px 5px rgb(black, .2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  transform: translateX(-100%);
+  transition: all ease-out .5s;
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.side-menu ul li{
+  font-size: var(--md);
+  text-decoration: none;
+  list-style-type: none;
+  padding: 16px;
+}
+
+.side-menu ul li a{
+  color: black;
+}
+
+.side-menu button{
+  height: 40px;
+  background: transparent;
+  border:none;
+  margin-top: 20px;
+}
+
+/* Medium only */
+@media screen and (min-width: 0) and (max-width: 1298px) {
+  .show-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+
+// /* Large and up */
+// @media screen and (max-width: 479px) {
+//   .show-mobile {
+//     display: none;
+//   }
+//   .hide-mobile {
+//     display: block;
+//   }
+// }

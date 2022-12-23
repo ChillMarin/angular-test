@@ -1,0 +1,59 @@
+<div class="hide-mobile">
+  <div class="header-container">
+    <nav>
+      <a href="/">
+        <img
+          width="90"
+          src="../../../assets/logos/logo-meditavivir.jpg"
+          alt="Meditavivir logo"
+        />
+      </a>
+      <ul>
+        <li><a href="/aprende-a-meditar">Aprende a meditar</a></li>
+        <li><a href="/cursos">Cursos</a></li>
+        <li><a href="/meditaciones-guiadas">Meditaciones guiadas</a></li>
+        <li><a href="/mentorias">Mentorias personalizadas</a></li>
+        <li><a href="/empresas">Para empresas</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-buttons">
+      <a href="/login">Iniciar sesión</a>
+      <a href="/register">Registrarse</a>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Menu -->
+
+<div class="show-mobile">
+  <div>
+    <button (click)="toggleMenu()">
+      <img src="../../../assets/svg/icon_menu.svg" alt="menu" />
+    </button>
+    <a href="">
+      <img
+        src="../../../assets/logos/logo-meditavivir.jpg"
+        alt="logo"
+        width="90"
+      />
+    </a>
+    <div class="account">
+      <a href="">Login/registro</a>
+    </div>
+  </div>
+  <div class="side-menu" [class.active]="activeMenu">
+    <ul>
+      <li><a href="/aprende-a-meditar">Aprende a meditar</a></li>
+      <li><a href="/cursos">Cursos</a></li>
+      <li><a href="/meditaciones-guiadas">Meditaciones guiadas</a></li>
+      <li><a href="/mentorias">Mentorias personalizadas</a></li>
+      <li><a href="/empresas">Para empresas</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+    <button (click)="toggleMenu()">
+      <img src="../../../assets/iconos/close.png" width="40px">
+    </button>
+  </div>
+</div>

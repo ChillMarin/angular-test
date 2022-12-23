@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(./app/styles/reset.scss);
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+  --white:#FFFFFF;
+  --black:##000000;
+  --very-light-gray:#C7C7C7;
+  --text-input-field:#F7F7F7;
+  --meditavivir-logo:#4a4596;
+  --meditavivir-light-purple:#a987c1;
+  --meditavivir-dark-purple:#824da6;
+  --sm:14px;
+  --md:16px;
+  --lg:18px;
+}

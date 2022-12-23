@@ -1,0 +1,91 @@
+section{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100vh;
+  margin-top: -60px;
+  width: 100vw;
+}
+
+section .section1-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  font-size: var(--lg);
+}
+
+section .section1-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  margin-right: 40px;
+}
+
+.section1-right img{
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+// plantilla olas
+.container-olas{
+  display: flex;
+  justify-content: flex-end;
+}
+#olas{
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top:80vh;
+  left: 90vw;
+  overflow: hidden;
+}
+
+
+
+//Tablets en horizonal y escritorios normales
+  // ------------------------------------------------------------------------- /
+@media (min-width: 768px) and (max-width: 1199px) {
+  section{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  section .section1-right{
+    margin-right: 0px;
+  }
+
+  .section1-right img{
+    width: 80%;
+    border-radius: 16px;
+  }
+}
+
+// / Móviles en horizontal o tablets en vertical
+//    ------------------------------------------------------------------------- /
+@media (max-width: 767px) {
+  section{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  section .section1-right{
+    margin-right: 0px;
+  }
+ }
+
+// Móviles en vertical
+ /*  ------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  section{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  section .section1-right{
+    margin-right: 0px;
+  }
+ }
