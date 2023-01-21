@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
   {
@@ -17,7 +17,21 @@ const routes: Routes = [
       },
       {
         path:'login',
-        component: LoginComponent
+        loadChildren:() => import('./pages/login/login.module').then(m => m.LoginModule),
+        data: {
+          preload: true
+        }
+      },
+      {
+        path:'register',
+        component: RegisterComponent
+      },
+      {
+        path:'cursos',
+        loadChildren:() => import('./pages/cursos/cursos.module').then(m => m.CursosModule),
+        data: {
+          preload: true
+        }
       }
     ]
   }

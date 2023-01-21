@@ -1,0 +1,26 @@
+h2{
+  font-size: var(--lg);
+  text-align: center;
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+
+h3{
+  font-size: var(--md);
+  margin-bottom: 42px;
+}
+
+#categorias-title{
+  text-align: left;
+  margin-left: 42px;
+}
+
+section{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 42px;
+
+}
+
